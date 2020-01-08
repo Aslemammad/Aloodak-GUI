@@ -1,0 +1,49 @@
+Arguments: 
+  /usr/bin/node /home/bagher/.yarn/bin/yarn.js add puppeteer
+
+PATH: 
+  /home/bagher/dart-sass/dart-sass:/home/bagher/.yarn/bin:/home/bagher/.config/yarn/global/node_modules/.bin:/home/bagher/dart-sass/dart-sass:/home/bagher/.yarn/bin:/home/bagher/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/bagher/.scripts/tools:/home/bagher/.scripts/statusbar:/home/bagher/.scripts/cron:/home/bagher/.scripts/i3cmds:/home/bagher/.scripts/:/home/bagher/.pub-cache/bin:/home/bagher/.pub-cache/bin:/home/bagher/development/flutter/bin:/opt/android-studio/bin:/home/bagher/vectr:/home/bagher/shell:./node_modules/.bin:/home/bagher/.scripts/tools:/home/bagher/.scripts/statusbar:/home/bagher/.scripts/cron:/home/bagher/.scripts/i3cmds:/home/bagher/.scripts/:/home/bagher/.pub-cache/bin:/home/bagher/.pub-cache/bin:/home/bagher/development/flutter/bin:/opt/android-studio/bin:/home/bagher/vectr:/home/bagher/shell:./node_modules/.bin:/opt/android-sdk/tools:/opt/android-sdk/tools/bin:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/bagher/.scripts/tools:/home/bagher/.scripts/statusbar:/home/bagher/.scripts/cron:/home/bagher/.scripts/i3cmds:/home/bagher/.scripts/:/home/bagher/.pub-cache/bin:/home/bagher/.pub-cache/bin:/home/bagher/development/flutter/bin:/opt/android-studio/bin:/home/bagher/vectr:/home/bagher/shell:./node_modules/.bin:/home/bagher/.pub-cache/bin:/home/bagher/development/flutter/bin:/opt/android-studio/bin:/home/bagher/vectr:/home/bagher/.pub-cache/bin:/home/bagher/development/flutter/bin:/opt/android-studio/bin:/home/bagher/vectr
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  12.13.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ECONNREFUSED 224.0.0.1:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1128:14)
+
+npm manifest: 
+  {
+      "name": "aloodak-gui",
+      "version": "1.0.0",
+      "description": "The GUI version of aloodak",
+      "main": "src/windows/main/main.js",
+      "type": "module",
+      "directories": {},
+      "dependencies": {
+          "cheerio": "^1.0.0-rc.3",
+          "electron": "^7.1.7",
+          "puppeteer-core": "^2.0.0",
+          "request": "^2.88.0"
+      },
+      "devDependencies": {
+          "browserify": "^16.5.0",
+          "electron-reload": "^1.5.0"
+      },
+      "scripts": {
+          "start": "electron ."
+      },
+      "author": "asleMammad",
+      "license": "GPL-3.0"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

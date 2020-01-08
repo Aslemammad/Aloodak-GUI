@@ -1,0 +1,29 @@
+{
+    "name": "aloodak-gui",
+    "version": "1.0.0",
+    "description": "The GUI version of aloodak",
+    "main": "src/windows/main/main.js",
+    "type": "module",
+    "directories": {},
+    "dependencies": {
+        "animate.css": "^3.7.2",
+        "cheerio": "^1.0.0-rc.3",
+        "electron": "^7.1.7",
+        "electron-store": "^5.1.0",
+        "node-notifier": "^6.0.0",
+        "puppeteer": "^2.0.0"
+    },
+    "devDependencies": {
+        "browserify": "^16.5.0",
+        "electron-builder": "^21.2.0",
+        "electron-reload": "^1.5.0"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "win": {
+        "target": "NSIS"
+    },
+    "author": "asleMammad",
+    "license": "GPL-3.0"
+}

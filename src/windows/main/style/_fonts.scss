@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('./fonts/vazir-font/Farsi-Digits/Vazir-FD.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir Medium';
+    src: url('./fonts/vazir-font/Farsi-Digits/Vazir-Medium-FD.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir Bold';
+    src: url('./fonts/vazir-font/Farsi-Digits/Vazir-Bold-FD.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Vazir Thin';
+    src: url('./fonts/vazir-font/Farsi-Digits/Vazir-Thin-FD.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@mixin Vazir {
+    font-family: 'Vazir', sans-serif;
+    color: white;
+}
+
+@mixin Vazir-Medium {
+    font-family: 'Vazir Medium', sans-serif;
+    color: white;
+}
+
+@mixin Vazir-Bold {
+    font-family: 'Vazir Bold', sans-serif;
+    color: white;
+}
+
+@mixin Vazir-Thin {
+    font-family: 'Vazir Thin', sans-serif;
+    color: white;
+}

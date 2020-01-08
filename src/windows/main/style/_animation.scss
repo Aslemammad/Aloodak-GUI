@@ -1,0 +1,43 @@
+@keyframes colorchange {
+    0% {
+        background: #8BF451;
+    }
+    25% {
+        background: #F9E337;
+    }
+    50% {
+        background: #FD9A4C;
+    }
+    75% {
+        background: #B563B6;
+    }
+    100% {
+        background: #B06885;
+    }
+}
+
+@keyframes colorchangebutton {
+    0% {
+        color: #8BF451;
+    }
+    25% {
+        color: #F9E337;
+    }
+    50% {
+        color: #FD9A4C;
+    }
+    75% {
+        color: #B563B6;
+    }
+    100% {
+        color: #B06885;
+    }
+}
+
+.animation {
+    animation: colorchange 20s infinite alternate !important;
+}
+
+.animation-button {
+    animation: colorchangebutton 20s infinite alternate !important;
+}

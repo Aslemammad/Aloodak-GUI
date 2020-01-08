@@ -1,0 +1,57 @@
+@import '_fonts';
+@import 'window';
+@import '_loading';
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+    @include Vazir-Thin;
+    background: #FF6501;
+    animation: colorchange 20s infinite alternate !important;
+    .container {
+        h1,
+        h3 {
+            &::selection {
+                background: none;
+            }
+        }
+        img {
+            height: 90px;
+            padding: 15px;
+        }
+        select {
+            background: white;
+            margin: 15px;
+            border: none;
+            border-radius: 25px;
+            padding: 5px 15px;
+            outline: none;
+            option {
+                padding: 3px;
+            }
+            margin-bottom: 25px;
+            visibility: hidden;
+        }
+        #activate {
+            visibility: hidden;
+            color: #FF6501;
+        }
+        button {
+            background: white;
+            border: none;
+            border-radius: 25px;
+            padding: 3px 15px;
+            outline: none;
+            transition-duration: 0.3s;
+            animation: colorchangebutton 20s infinite alternate !important;
+            &:hover {
+                opacity: .6;
+                transition: all .2s;
+            }
+        }
+    }
+}

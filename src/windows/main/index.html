@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="../../../node_modules/animate.css/animate.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body class="animated animation">
+    <div class="container-fluid window">
+        <div class="col-12 position-fixed d-flex justify-content-between" id="title-bar">
+            <div id="title-bar-btns">
+                <button id="close-btn">X</button>
+            </div>
+            <div class="" id="title">آلودک</div>
+        </div>
+    </div>
+    <div class="center container" id="center">
+        <h1 class="city col-12 d-flex justify-content-center" id="city">تهران</h1>
+        <div class="inner col-12 justify-content-between row ">
+            <div class="right d-flex flex-column">
+                <div class="co item d-flex">
+                    <span>CO: </span>
+                    <span class="second" id="co">بارگزاری نشده </span>
+                </div>
+                <div class="o3 item d-flex">
+                    <span>O<sub>3</sub>: </span>
+                    <span class="second" id="o3">بارگزاری نشده </span>
+                </div>
+                <div class="no2 item d-flex">
+                    <span>NO<sub>2</sub>: </span>
+                    <span class="second" id="no2">بارگزاری نشده </span>
+                </div>
+                <div class="so2 item d-flex">
+                    <span>SO<sub>2</sub>: </span>
+                    <span class="second" id="so2">بارگزاری نشده </span>
+                </div>
+                <div class="so2 item d-flex">
+                    <span>وضعیت: </span>
+                    <span class="second" id="status">بارگزاری نشده </span>
+                </div>
+
+            </div>
+            <div class="left" id="left">
+                141<sub>PM 2.5</sub>
+            </div>
+        </div>
+        <div class="bottom col-12">
+            این امار در روز <span id="day"></span> ام ثبت شده است.
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <footer class="container-fluid position-fixed d-flex justify-content-end align-items-end ">
+        <span class="animation-button footer-button" id="settings-button">تنظیمات</span>
+        <span class="animation-button footer-button" id="about">درباره</span>
+        <span class="refresh animation-button footer-button" id="refresh">تازه سازی</span>
+        <div class="about"></div>
+        <div class="settings d-flex justify-content-center flex-column align-items-center" id="settings">
+            <span id="description-city-select">شهر و یا منطقه جدید را وارد کنید</span>
+            <select name="city-select" id="city-select">
+  
+<option value="تهران">تهران</option>
+
+                </select>
+            <button class="" id="activate">ادامه</button>
+        </div>
+
+    </footer>
+    <div class="windows8loading container d-flex justify-content-center align-items-center flex-column" id="windows8loading">
+        <div class="wBall" id="wBall_1">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_2">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_3">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_4">
+            <div class="wInnerBall"></div>
+        </div>
+        <div class="wBall" id="wBall_5">
+            <div class="wInnerBall"></div>
+        </div>
+    </div>
+    <div class="darkside">
+
+    </div>
+    <script src="js/windowBar.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

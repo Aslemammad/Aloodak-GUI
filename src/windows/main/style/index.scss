@@ -1,0 +1,132 @@
+@import '_fonts';
+@import 'window';
+@import 'animation';
+@import 'loading';
+*::after,
+*::before,
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    direction: rtl;
+    @include Vazir-Thin;
+    background: #ff6501;
+    color: white;
+    // @include color-playing;
+    .center {
+        visibility: hidden;
+        .city {
+            @include Vazir-Thin;
+        }
+        .right {
+            cursor: pointer;
+            margin-top: 50px;
+            .item {
+                span {
+                    &::selection {
+                        background: none;
+                    }
+                    font-size: 25px;
+                    &:first-child {
+                        @include Vazir;
+                    }
+                    margin-right: 5px;
+                }
+            }
+        }
+        .left {
+            cursor: pointer;
+            &::selection {
+                background: none;
+            }
+            @include Vazir;
+            font-size: 200px;
+            sub {
+                @include Vazir-Thin;
+                font-size: 15px;
+                &::selection {
+                    background: none;
+                }
+            }
+            margin-top: 15px;
+        }
+        .bottom {
+            &::selection {
+                background: none;
+            }
+        }
+    }
+    footer {
+        position: fixed;
+        height: 30px;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        .refresh {
+            border-radius: 20px;
+        }
+        span {
+            background: white;
+            margin-right: 15px;
+            font-size: 13px;
+            cursor: pointer;
+            padding: 5px;
+            transition: all 1s;
+            border-radius: 25px;
+            &#settings-button {
+                visibility: hidden;
+            }
+            &:hover {
+                background: rgba($color: #ffffff, $alpha: .2);
+                border-radius: 20px;
+            }
+        }
+        .settings {
+            @include Vazir;
+            background: #ff6501;
+            position: absolute;
+            border: white solid 1px;
+            width: 500px;
+            height: 150px;
+            border-radius: 25px;
+            z-index: 1;
+            bottom: 250px;
+            left: 20%;
+            select {
+                background: white;
+                border: none;
+                border-radius: 25px;
+                padding: 5px 15px;
+                outline: none;
+                width: 70%;
+                option {
+                    padding: 3px;
+                }
+                margin: 15px 0;
+            }
+            button {
+                background: white;
+                border: none;
+                border-radius: 25px;
+                padding: 3px 15px;
+                outline: none;
+                color: #ff6501;
+            }
+            visibility: hidden;
+        }
+    }
+    .windows8loading {
+        top: 50%;
+        left: 48%;
+    }
+}
+
+.darkside {
+    background: dark;
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+}
