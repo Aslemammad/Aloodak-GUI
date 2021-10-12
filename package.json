@@ -8,7 +8,7 @@
     "dependencies": {
         "animate.css": "^3.7.2",
         "cheerio": "^1.0.0-rc.3",
-        "electron": "^7.1.7",
+        "electron": "^11.5.0",
         "electron-store": "^5.1.0",
         "node-notifier": "^6.0.0",
         "puppeteer": "^2.0.0"
